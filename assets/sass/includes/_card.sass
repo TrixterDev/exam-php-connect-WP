@@ -1,0 +1,93 @@
+.card
+  &__title
+    padding: .9375rem
+    margin-top: 1.5625rem
+    margin-bottom: 3.125rem
+    h1
+      font-weight: 400
+      font-size: 3.125rem
+      p
+        color: $g-dark
+        text-decoration: underline
+  &__content
+    padding: .9375rem
+  &__category
+    margin-bottom: 4.875rem
+    a
+      font-size: 1.125rem
+      margin-right: 2.5rem
+      position: relative
+      transition: .6s all
+      &:last-child
+        margin: 0
+      &:after 
+        display: block
+        position: absolute
+        left: 0
+        width: 0
+        height: 2px
+        background-color: $g
+        content: ""
+        transition: width 0.3s ease-out 
+      &:hover:after, &:focus:after
+        width: 100%
+  &__swiper
+    position: relative
+
+.swiper
+  height: 25.3125rem
+  &-slide
+    width: 16.25rem
+    text-align: center
+    img
+      border-radius: 1.875rem
+    p
+      font-size: 1.25rem
+      font-weight: 500
+      margin-top: 2.625rem
+    span
+      display: inline-block
+      margin-top: .3125rem
+      font-weight: 500
+      color: $g-dark
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next 
+  right: 6.25rem !important
+  top: -40px
+  position: absolute
+  padding: 1.25rem
+  border: .125rem solid $g-dark
+  width: .625rem
+  height: .625rem
+  color: $g-dark
+  border-radius: .625rem
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev 
+  padding: 1.25rem
+  top: -40px
+  position: absolute
+  border: .125rem solid $g-dark
+  width: .625rem
+  height: .625rem
+  color: $g-dark
+  border-radius: .625rem
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after
+  font-size: 18px
+  font-weight: bold
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+  font-size: 18px
+  font-weight: bold
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next
+  left: auto
+
+@media screen and ( max-width: 37.8125rem )
+  .card
+    &__category
+      display: flex
+      flex-direction: column
+      a
+        width: max-content
+        margin-bottom: .9375rem

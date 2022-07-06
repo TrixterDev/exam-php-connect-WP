@@ -1,0 +1,48 @@
+.home
+  &__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 5rem
+    padding: .9375rem
+  &__info 
+    h1
+      font-weight: 500
+      width: 33.75rem
+      font-size: 3.125rem
+    p
+      color: $g-dark
+      text-decoration: underline
+    a
+      padding: .9375rem 2.1875rem
+      border: .125rem solid $g-dark
+      color: $g-dark
+      transition: .6s all
+      display: inline-block
+      margin-top: 1.875rem
+      border-radius: 2.5rem
+      font-weight: 500
+      &:hover
+        background: $g-dark
+        color: #fff
+
+@media screen and ( max-width: 64.6875rem )
+  .home
+    &__info
+      h1
+        width: 100%
+
+@media screen and ( max-width: 56.875rem )
+  .home
+    &__content
+      flex-direction: column-reverse
+    &__info
+      text-align: center
+
+
+@media screen and ( max-width: 30.625rem )
+  .home
+    &__img
+      img
+        width: 100%
+  
